@@ -7,7 +7,7 @@ public class SwitchCase {
         System.out.println("Entre com uma dia da semana, (1 - 7)! ");
         int diaSemana = scan.nextInt();
 
-        switch (diaSemana){
+       /* switch (diaSemana){
             case 1: System.out.println("Domingo"); break;
             case 2: System.out.println("Segunda"); break;
             case 3: System.out.println("Terca"); break;
@@ -16,7 +16,20 @@ public class SwitchCase {
             case 6: System.out.println("Sexta"); break;
             case 7: System.out.println("Sabado"); break;
             default:
-                System.out.println("Nao e um dia da semana valido!!");
+                System.out.println("Nao e um dia da semana valido!!"); */
+        
+        // OUTRA FORMA DE CHEGAR AO MESMO RESULTADO
+        
+           switch (diaSemana){
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6: System.out.println("Dia util!"); break;
+            case 1:
+            case 7: System.out.println("Fim de semana!!"); break;
+            default:
+                System.out.println("Nao e um dia da semana valido!!");     
         }
     }
 }
